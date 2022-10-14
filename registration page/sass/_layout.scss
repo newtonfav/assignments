@@ -1,0 +1,73 @@
+.container {
+  max-width: 70%;
+  margin: 6rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //   align-items: stretch;
+
+  @media only screen and (max-width: $bp-largest) {
+    max-width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    max-width: 90%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 60%;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-smallest-1) {
+    max-width: 100%;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 1 50%;
+
+  font-size: 2.5rem;
+  color: #eee;
+  margin-right: 5rem;
+  animation: moveInLeft 1s ease-out;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest-1) {
+    text-align: center;
+    margin: 2rem;
+  }
+}
+
+.form {
+  margin: 4rem;
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 1 50%;
+  animation: moveInRight 1s ease-out;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.5rem;
+  }
+}

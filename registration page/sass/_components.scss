@@ -1,0 +1,109 @@
+.form__container {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-dark);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form__header {
+  background-color: #6960a9;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: $bp-smallest-1) {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  & span {
+    font-weight: 700;
+    font-size: 2.2rem;
+
+    @media only screen and (max-width: $bp-smallest-1) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    animation: pulsate 1s infinite;
+  }
+}
+
+.form__input {
+  display: block;
+
+  padding: 1.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1.8px solid #18152c;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  color: var(--color-grey-dark-3);
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest-2) {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+}
+
+.form__btn {
+  display: block;
+  background-color: #35e197;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-dark);
+  text-decoration: none;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    transition: all 0.2s;
+    transform: translateY(-3px);
+  }
+}
+
+.form__signin {
+  display: block;
+  align-self: center;
+  font-size: 1.8rem;
+  color: var(--color-grey-dark-3);
+}
+
+.hero__main {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+.success {
+  margin: 6rem auto;
+
+  display: flex;
+  flex-direction: column;
+
+  &__message {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+  }
+}
